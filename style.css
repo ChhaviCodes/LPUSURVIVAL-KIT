@@ -1,0 +1,417 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0b12;
+    color: white;
+}
+
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    border-bottom: 1px solid #292431;
+
+    position: sticky;
+    top: 0;
+
+    background: #0d0b12;
+
+    z-index: 100;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #cfc8d8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #ff9ed2;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            #4b2146 0%,
+            transparent 35%
+        );
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.small-heading {
+    color: #ff9ed2;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #ff9ed2;
+}
+
+.hero-text {
+    color: #bdb6c6;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+.start-button {
+    margin-top: 30px;
+
+    padding: 14px 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #ff9ed2;
+    color: #160d15;
+
+    font-weight: bold;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.start-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Dashboard */
+
+.dashboard,
+.courses {
+    padding: 90px 7%;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #ff9ed2;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-top: 8px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    padding: 28px;
+
+    background: #17131d;
+
+    border: 1px solid #292431;
+
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    border-color: #ff9ed2;
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #aaa3b2;
+    line-height: 1.6;
+
+    min-height: 80px;
+}
+
+.card button {
+    background: none;
+
+    border: none;
+
+    color: #ff9ed2;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* Courses */
+
+.courses {
+    background: #121017;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    background: #17131d;
+
+    border: 1px solid #292431;
+
+    border-radius: 14px;
+}
+
+.course > span {
+    font-size: 30px;
+}
+
+.course h3 {
+    margin-bottom: 5px;
+}
+
+.course p {
+    color: #9992a2;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border-top: 1px solid #292431;
+}
+
+footer p {
+    color: #9992a2;
+    margin-top: 10px;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+/* Deadline Radar */
+
+.deadline-section {
+    padding: 90px 7%;
+}
+
+.deadline-container {
+    display: grid;
+
+    grid-template-columns: 350px 1fr;
+
+    gap: 30px;
+}
+
+
+/* Form */
+
+.deadline-form {
+    background: #17131d;
+
+    border: 1px solid #292431;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    height: fit-content;
+}
+
+.deadline-form h3 {
+    margin-bottom: 20px;
+}
+
+.deadline-form input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 12px;
+
+    border-radius: 9px;
+
+    border: 1px solid #332d3a;
+
+    background: #0d0b12;
+
+    color: white;
+
+    outline: none;
+}
+
+.deadline-form input:focus {
+    border-color: #ff9ed2;
+}
+
+.deadline-form button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #ff9ed2;
+
+    color: #160d15;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Deadline Items */
+
+.deadline-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.deadline-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 22px;
+
+    background: #17131d;
+
+    border: 1px solid #292431;
+
+    border-radius: 15px;
+}
+
+.deadline-item p {
+    color: #9992a2;
+
+    margin-top: 6px;
+}
+
+.days-left {
+    color: #ff9ed2;
+
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .deadline-container {
+        grid-template-columns: 1fr;
+    }
+
+}
