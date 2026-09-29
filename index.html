@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPU Survival Kit</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+  <h1>🎓 LPU Survival Kit</h1>
+  <p>Your little helper for surviving the semester.</p>
+
+  <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</header>
+
+  <main>
+
+    <section>
+      <h2>Hey, Student! 👋</h2>
+      <p>Let's survive Semester 3 together.</p>
+    </section>
+
+    <section>
+      <h2>📚 My Courses</h2>
+
+      <article>
+        <h3>Data Structures</h3>
+        <p>Algorithms, complexity and data organization.</p>
+      </article>
+
+      <article>
+        <h3>Operating System</h3>
+        <p>Processes, memory, files and more.</p>
+      </article>
+
+      <article>
+        <h3>Fundamental of Web Programming</h3>
+        <p>HTML, CSS and JavaScript.</p>
+      </article>
+
+      <article>
+        <h3>Business Management</h3>
+        <p>Management and organization basics.</p>
+      </article>
+
+      <article>
+        <h3>Community Development Project</h3>
+        <p>My semester project.</p>
+      </article>
+
+    </section>
+
+    <section>
+      <h2>📊 Semester Progress</h2>
+      <p>65% completed</p>
+      <progress value="65" max="100"></progress>
+    </section>
+
+    <section>
+  <h2>⏰ Upcoming Deadlines</h2>
+
+  <input 
+    type="text" 
+    id="deadlineInput" 
+    placeholder="e.g. Data Structures Assignment"
+  >
+
+  <input 
+    type="date" 
+    id="deadlineDate"
+  >
+
+  <button onclick="addDeadline()">Add Deadline</button>
+
+  <div id="deadlineList"></div>
+</section>
+
+    
+      <section>
+  <h2>📝 Quick Notes</h2>
+
+  <textarea id="noteInput" placeholder="Write a quick note..."></textarea>
+  <br>
+
+  <button onclick="addNote()">Add Note</button>
+
+  <div id="notesList"></div>
+
+
+    </section>
+
+    <section>
+      <h2>🚨 11:59 PM Panic Mode</h2>
+
+      <p>Left your assignment until the last minute?</p>
+
+      <button onclick="panicMode()">DON'T PANIC 😭</button>
+
+      <p id="panic-message"></p>
+    </section>
+    <section>
+  <h2>🎓 ODL Survival Tips</h2>
+
+  <ul>
+    <li>⏰ Keep track of assignment and exam deadlines.</li>
+    <li>📚 Review your course material regularly.</li>
+    <li>💻 Keep your study files organized.</li>
+    <li>📝 Make short notes while studying.</li>
+    <li>🧠 Don't leave everything until the last day!</li>
+  </ul>
+</section>
+
+  </main>
+
+  <footer>
+     <p>Made by an LPU student 💻🎓</p>
+     <p>Made by Chhavi</p>
+
+  </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
